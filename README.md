@@ -1,6 +1,3 @@
 # bastetsavanna
-Space Cats Capture NTFs
- /\___/\
-( o   o )
- >  ^  <
+Space Cats Capture NTFs 🐈 
 Develop with Zeek Science.
