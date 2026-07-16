@@ -1,15 +1,11 @@
 workflows:
-android-build:
-name: Android Build
+android-debug:
+name: Android Debug APK
 enviroment:
-android_signing:
-- keystore_reference
 vars:
 PACKAGE_NAME: "com.bropunzellsoftware.bastetsavanna"
-groups:
-- default
 scripts:
-- name: Build APK
+- name: Build Debug APK
 script: |
 ./gradlew assembleDebug
 
