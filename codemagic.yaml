@@ -1,0 +1,18 @@
+workflows:
+android-build:
+name: Android Build
+enviroment:
+android_signing:
+- keystore_reference
+vars:
+PACKAGE_NAME: "com.bropunzellsoftware.bastetsavanna"
+groups:
+- default
+scripts:
+- name: Build APK
+script: |
+./gradlew assembleDebug
+
+artifacts:
+- app/build/outputs/apk/debug/*.apk
+
