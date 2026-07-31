@@ -1,1 +1,0 @@
-\\ Biblioteca de acessos à permissões.
