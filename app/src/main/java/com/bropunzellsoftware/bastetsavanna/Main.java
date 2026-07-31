@@ -2,13 +2,15 @@ package com.bropunzellsoftware.bastetsavanna;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import android.content.Intent;
+
+import com.bropunzellsoftware.bastetsavanna.acesso.CacheNavegacao;
 
 
 public class Main extends Activity {
@@ -24,23 +26,41 @@ public class Main extends Activity {
         );
 
 
-        start();
+        String pagina =
+                CacheNavegacao.paginaAtual(this);
+
+
+        // Restaura última página aberta
+
+        if (pagina.equals("Config")) {
+
+
+            startActivity(
+                    new Intent(
+                            this,
+                            Config.class
+                    )
+            );
+
+
+            return;
+
+        }
+
+
+        CacheNavegacao.salvarPaginaAtual(
+                this,
+                "Main"
+        );
+
+
+        criarTela();
 
     }
 
 
 
-    public void start(){
-
-
-        System.out.println(
-                "Bastet Savanna started"
-        );
-
-
-        // ==========================
-        // FUNDO
-        // ==========================
+    private void criarTela() {
 
 
         FrameLayout tela =
@@ -93,8 +113,8 @@ public class Main extends Activity {
 
         FrameLayout.LayoutParams tituloParams =
                 new FrameLayout.LayoutParams(
-                        FrameLayout.LayoutParams.MATCH_PARENT,
-                        FrameLayout.LayoutParams.WRAP_CONTENT
+                        -1,
+                        -2
                 );
 
 
@@ -128,56 +148,59 @@ public class Main extends Activity {
 
 
         config.setOnClickListener(
-                new View.OnClickListener(){
-
-                    @Override
-                    public void onClick(
-                            View v
-                    ){
-
-                        Intent intent =
-                                new Intent(
-                                        Main.this,
-                                        Config.class
-                                );
+                v -> {
 
 
-                        startActivity(
-                                intent
-                        );
+                    CacheNavegacao.salvarPaginaAnterior(
+                            this,
+                            "Main"
+                    );
 
-                    }
+
+                    CacheNavegacao.salvarPaginaAtual(
+                            this,
+                            "Config"
+                    );
+
+
+                    startActivity(
+                            new Intent(
+                                    this,
+                                    Config.class
+                            )
+                    );
+
 
                 }
         );
 
 
 
-        FrameLayout.LayoutParams botaoParams =
+        FrameLayout.LayoutParams configParams =
                 new FrameLayout.LayoutParams(
                         80,
                         80
                 );
 
 
-        botaoParams.gravity =
+        configParams.gravity =
                 Gravity.TOP
                 |
                 Gravity.RIGHT;
 
 
-        botaoParams.topMargin =
+        configParams.topMargin =
                 20;
 
 
-        botaoParams.rightMargin =
+        configParams.rightMargin =
                 20;
 
 
 
         tela.addView(
                 config,
-                botaoParams
+                configParams
         );
 
 
@@ -185,7 +208,6 @@ public class Main extends Activity {
         setContentView(
                 tela
         );
-
 
     }
 
