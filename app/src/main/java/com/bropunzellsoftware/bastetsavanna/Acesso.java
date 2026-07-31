@@ -1,1 +1,5 @@
-\\ Biblioteca de acessos à permissões 
+\* Biblioteca de acessos à permissões *\ 
+
+package com.bropunzellsoftware.bastetsavanna;
+
+
