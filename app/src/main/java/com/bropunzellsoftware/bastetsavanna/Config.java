@@ -2,12 +2,14 @@ package com.bropunzellsoftware.bastetsavanna;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.content.Intent;
 import android.graphics.Color;
 import android.view.Gravity;
-import android.view.View;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
+
+import com.bropunzellsoftware.bastetsavanna.acesso.CacheNavegacao;
 
 
 public class Config extends Activity {
@@ -23,17 +25,25 @@ public class Config extends Activity {
         );
 
 
+        CacheNavegacao.salvarPaginaAnterior(
+                this,
+                "Main"
+        );
+
+
+        CacheNavegacao.salvarPaginaAtual(
+                this,
+                "Config"
+        );
+
+
         criarTela();
 
     }
 
 
 
-    private void criarTela(){
-
-        // ==========================
-        // FUNDO
-        // ==========================
+    private void criarTela() {
 
 
         FrameLayout tela =
@@ -53,46 +63,7 @@ public class Config extends Activity {
 
 
         // ==========================
-        // BARRA SUPERIOR
-        // ==========================
-
-
-        FrameLayout barra =
-                new FrameLayout(
-                        this
-                );
-
-
-        barra.setBackgroundColor(
-                Color.rgb(
-                        25,
-                        25,
-                        25
-                )
-        );
-
-
-        FrameLayout.LayoutParams barraParams =
-                new FrameLayout.LayoutParams(
-                        FrameLayout.LayoutParams.MATCH_PARENT,
-                        70
-                );
-
-
-        barraParams.gravity =
-                Gravity.TOP;
-
-
-
-        tela.addView(
-                barra,
-                barraParams
-        );
-
-
-
-        // ==========================
-        // VOLTAR
+        // BOTÃO VOLTAR
         // ==========================
 
 
@@ -108,25 +79,70 @@ public class Config extends Activity {
 
 
         voltar.setOnClickListener(
-                v -> finish()
+                v -> {
+
+
+                    String anterior =
+                            CacheNavegacao.paginaAnterior(
+                                    this
+                            );
+
+
+                    if(anterior.equals("Main")) {
+
+
+                        CacheNavegacao.salvarPaginaAtual(
+                                this,
+                                "Main"
+                        );
+
+
+                        CacheNavegacao.salvarPaginaAnterior(
+                                this,
+                                ""
+                        );
+
+
+                        startActivity(
+                                new Intent(
+                                        this,
+                                        Main.class
+                                )
+                        );
+
+
+                        finish();
+
+                    }
+
+                }
         );
+
 
 
         FrameLayout.LayoutParams voltarParams =
                 new FrameLayout.LayoutParams(
-                        70,
-                        70
+                        80,
+                        80
                 );
 
 
         voltarParams.gravity =
-                Gravity.LEFT
+                Gravity.TOP
                 |
-                Gravity.TOP;
+                Gravity.LEFT;
+
+
+        voltarParams.topMargin =
+                20;
+
+
+        voltarParams.leftMargin =
+                20;
 
 
 
-        barra.addView(
+        tela.addView(
                 voltar,
                 voltarParams
         );
@@ -155,7 +171,7 @@ public class Config extends Activity {
 
 
         titulo.setTextSize(
-                22
+                24
         );
 
 
@@ -167,8 +183,8 @@ public class Config extends Activity {
 
         FrameLayout.LayoutParams tituloParams =
                 new FrameLayout.LayoutParams(
-                        FrameLayout.LayoutParams.MATCH_PARENT,
-                        70
+                        -1,
+                        -2
                 );
 
 
@@ -177,7 +193,7 @@ public class Config extends Activity {
 
 
 
-        barra.addView(
+        tela.addView(
                 titulo,
                 tituloParams
         );
