@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.app.AppOpsManager;
 import android.content.Context;
@@ -14,9 +14,7 @@ public final class UsoAplicativos {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica suporte ao controle de uso.
-     */
+    
     public static boolean possui() {
 
         return true;
@@ -28,13 +26,7 @@ public final class UsoAplicativos {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Verifica acesso ao histórico de uso
-     * dos aplicativos.
-     *
-     * Essa autorização é concedida
-     * manualmente pelo usuário.
-     */
+    
     public static boolean temPermissao(
             Context context
     ) {
@@ -63,9 +55,7 @@ public final class UsoAplicativos {
     }
 
 
-    /**
-     * Abre tela de permissão.
-     */
+    
     public static void solicitar(
             Context context
     ) {
@@ -100,4 +90,4 @@ public final class UsoAplicativos {
 
     }
 
-}
+} */
