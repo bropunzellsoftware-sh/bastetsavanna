@@ -16,16 +16,12 @@ public final class Wifi {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica se o aparelho possui Wi-Fi.
-     */
+    
     public static boolean possui(Context context) {
         return Hardware.possuiWifi(context);
     } 
 
-    /**
-     * Verifica se possui Wi-Fi Direct.
-     */
+    
     public static boolean possuiDirect(Context context) {
         return Hardware.possuiWifiDirect(context);
     }
@@ -34,10 +30,7 @@ public final class Wifi {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Para escanear redes Wi-Fi, o Android exige
-     * permissão de localização.
-     */
+    
     public static boolean temPermissao(Activity activity) {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
@@ -52,9 +45,7 @@ public final class Wifi {
         return true;
     }
 
-    /**
-     * Solicita a permissão necessária.
-     */
+    
     public static void solicitar(Activity activity) {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
@@ -69,10 +60,7 @@ public final class Wifi {
 
     }
 
-    /**
-     * Verifica se o Android recomenda
-     * exibir uma justificativa.
-     */
+    
     public static boolean deveExplicar(Activity activity) {
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.Q) {
@@ -90,9 +78,7 @@ public final class Wifi {
     // ESTADO
     // ==========================
 
-    /**
-     * Retorna true quando o Wi-Fi pode ser utilizado.
-     */
+    
     public static boolean disponivel(Activity activity) {
 
         return possui(activity)
