@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.Manifest;
 import android.app.Activity;
@@ -21,7 +21,7 @@ public final class Wifi {
      */
     public static boolean possui(Context context) {
         return Hardware.possuiWifi(context);
-    }
+    } */
 
     /**
      * Verifica se possui Wi-Fi Direct.
