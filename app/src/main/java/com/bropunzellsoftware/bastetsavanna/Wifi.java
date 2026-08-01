@@ -21,7 +21,7 @@ public final class Wifi {
      */
     public static boolean possui(Context context) {
         return Hardware.possuiWifi(context);
-    } */
+    } 
 
     /**
      * Verifica se possui Wi-Fi Direct.
@@ -100,4 +100,4 @@ public final class Wifi {
 
     }
 
-}
+} */
