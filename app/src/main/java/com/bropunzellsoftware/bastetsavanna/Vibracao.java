@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.content.Context;
 import android.os.Build;
@@ -89,4 +89,4 @@ public final class Vibracao {
 
     }
 
-}
+} */
