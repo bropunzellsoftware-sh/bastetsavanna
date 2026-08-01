@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.Manifest;
 import android.app.Activity;
@@ -92,4 +92,4 @@ public final class Videos {
 
     }
 
-}
+} */
