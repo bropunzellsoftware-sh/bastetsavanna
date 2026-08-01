@@ -15,10 +15,7 @@ public final class Vibracao {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica se o aparelho possui
-     * motor de vibração.
-     */
+    
     public static boolean possui(Context context) {
 
         Vibrator vibrator =
@@ -33,9 +30,7 @@ public final class Vibracao {
     }
 
 
-    /**
-     * Verifica suporte a vibração avançada.
-     */
+    
     public static boolean possuiEfeito(Context context) {
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
@@ -61,10 +56,7 @@ public final class Vibracao {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Vibração utiliza permissão normal.
-     * Não precisa solicitação em runtime.
-     */
+    
     public static boolean temPermissao(Context context) {
 
         return true;
@@ -90,9 +82,7 @@ public final class Vibracao {
     // ESTADO
     // ==========================
 
-    /**
-     * Vibração disponível.
-     */
+   
     public static boolean disponivel(Context context) {
 
         return possui(context);
