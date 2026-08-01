@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.content.Context;
 import android.net.VpnService;
@@ -13,10 +13,7 @@ public final class VPN {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica se o Android possui
-     * suporte ao serviço VPN.
-     */
+    
     public static boolean possui() {
 
         return true;
@@ -28,11 +25,7 @@ public final class VPN {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * VPN não utiliza permissão comum.
-     * O Android exige autorização do usuário
-     * através do sistema.
-     */
+    
     public static boolean temPermissao() {
 
         return false;
@@ -40,14 +33,7 @@ public final class VPN {
     }
 
 
-    /**
-     * Solicita autorização do usuário.
-     *
-     * Deve ser chamado em uma Activity:
-     *
-     * Intent intent =
-     * VpnService.prepare(context);
-     */
+   
     public static boolean preparar(
             Context context
     ) {
@@ -78,10 +64,7 @@ public final class VPN {
     // ESTADO
     // ==========================
 
-    /**
-     * Verifica se VPN está disponível
-     * para uso pelo aplicativo.
-     */
+   
     public static boolean disponivel(
             Context context
     ) {
@@ -92,4 +75,4 @@ public final class VPN {
 
     }
 
-}
+} */
