@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -16,9 +16,7 @@ public final class Rede {
     // HARDWARE
     // ==========================
 
-    /**
-     * Todo Android possui gerenciamento de rede.
-     */
+    
     public static boolean possui() {
 
         return true;
@@ -30,10 +28,6 @@ public final class Rede {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Estado da rede não necessita
-     * permissão runtime.
-     */
     public static boolean temPermissao() {
 
         return true;
@@ -59,9 +53,7 @@ public final class Rede {
     // CONEXÃO
     // ==========================
 
-    /**
-     * Verifica se existe conexão ativa.
-     */
+    
     public static boolean conectado(Context context) {
 
         ConnectivityManager manager =
@@ -99,9 +91,7 @@ public final class Rede {
     }
 
 
-    /**
-     * Verifica Wi-Fi.
-     */
+   
     public static boolean wifi(Context context) {
 
         return transporte(
@@ -113,9 +103,7 @@ public final class Rede {
     }
 
 
-    /**
-     * Verifica dados móveis.
-     */
+    
     public static boolean dadosMoveis(Context context) {
 
         return transporte(
@@ -127,9 +115,7 @@ public final class Rede {
     }
 
 
-    /**
-     * Verifica Ethernet.
-     */
+   
     public static boolean ethernet(Context context) {
 
         return transporte(
@@ -178,9 +164,7 @@ public final class Rede {
     }
 
 
-    /**
-     * Tipo de conexão atual.
-     */
+   
     public static String tipo(Context context) {
 
         if (wifi(context))
@@ -211,4 +195,4 @@ public final class Rede {
 
     }
 
-}
+} */
