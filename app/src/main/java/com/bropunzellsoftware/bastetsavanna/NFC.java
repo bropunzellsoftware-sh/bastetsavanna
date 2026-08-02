@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.content.Context;
 import android.nfc.NfcAdapter;
@@ -12,9 +12,7 @@ public final class NFC {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica se o aparelho possui NFC.
-     */
+   
     public static boolean possui(Context context) {
 
         return Hardware.possuiNFC(context);
@@ -26,9 +24,7 @@ public final class NFC {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * NFC não possui permissão runtime.
-     */
+   
     public static boolean temPermissao(Context context) {
 
         return true;
@@ -36,9 +32,7 @@ public final class NFC {
     }
 
 
-    /**
-     * Não existe solicitação de permissão.
-     */
+   
     public static void solicitar() {
 
         // Não aplicável.
@@ -57,9 +51,7 @@ public final class NFC {
     // ESTADO
     // ==========================
 
-    /**
-     * Verifica se o NFC está ligado.
-     */
+   
     public static boolean ligado(Context context) {
 
         NfcAdapter adapter =
@@ -71,9 +63,7 @@ public final class NFC {
     }
 
 
-    /**
-     * NFC pronto para utilização.
-     */
+   
     public static boolean disponivel(Context context) {
 
         return possui(context)
@@ -81,4 +71,4 @@ public final class NFC {
 
     }
 
-}
+} */
