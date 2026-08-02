@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.Manifest;
 import android.app.Activity;
@@ -16,10 +16,7 @@ public final class Telefone {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica se o aparelho possui
-     * suporte à telefonia.
-     */
+    
     public static boolean possui(Context context) {
 
         TelephonyManager tm =
@@ -37,9 +34,7 @@ public final class Telefone {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Permissão para realizar chamadas.
-     */
+    
     public static boolean temChamadas(Activity activity) {
 
         return Permissao.verificar(
@@ -50,9 +45,7 @@ public final class Telefone {
     }
 
 
-    /**
-     * Permissão para acessar estado do telefone.
-     */
+    
     public static boolean temEstado(Activity activity) {
 
         return Permissao.verificar(
@@ -63,9 +56,7 @@ public final class Telefone {
     }
 
 
-    /**
-     * Verifica todas as permissões.
-     */
+    
     public static boolean temPermissao(Activity activity) {
 
         return temChamadas(activity)
@@ -74,9 +65,7 @@ public final class Telefone {
     }
 
 
-    /**
-     * Solicita permissões de telefone.
-     */
+    
     public static void solicitar(Activity activity) {
 
         Permissao.solicitar(
@@ -93,9 +82,7 @@ public final class Telefone {
     }
 
 
-    /**
-     * Verifica se deve mostrar explicação.
-     */
+   
     public static boolean deveExplicar(Activity activity) {
 
         return Permissao.deveExplicar(
@@ -110,9 +97,7 @@ public final class Telefone {
     // ESTADO
     // ==========================
 
-    /**
-     * Telefone pronto para utilização.
-     */
+   
     public static boolean disponivel(Activity activity) {
 
         return possui(activity)
@@ -121,9 +106,7 @@ public final class Telefone {
     }
 
 
-    /**
-     * Verifica se existe serviço de voz.
-     */
+    
     public static boolean possuiRedeMovel(Context context) {
 
         TelephonyManager tm =
@@ -140,4 +123,4 @@ public final class Telefone {
 
     }
 
-}
+} */
