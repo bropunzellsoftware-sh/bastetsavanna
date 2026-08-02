@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -13,9 +13,7 @@ public final class Memoria {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica se o aparelho possui memória RAM.
-     */
+    
     public static boolean possui() {
 
         return true;
@@ -27,9 +25,7 @@ public final class Memoria {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Memória do sistema não necessita permissão.
-     */
+    
     public static boolean temPermissao() {
 
         return true;
@@ -55,9 +51,7 @@ public final class Memoria {
     // INFORMAÇÕES
     // ==========================
 
-    /**
-     * Retorna memória RAM total em bytes.
-     */
+   
     public static long total(Context context) {
 
         ActivityManager manager =
@@ -83,9 +77,7 @@ public final class Memoria {
     }
 
 
-    /**
-     * Retorna memória RAM disponível em bytes.
-     */
+    
     public static long disponivel(Context context) {
 
         ActivityManager manager =
@@ -111,9 +103,7 @@ public final class Memoria {
     }
 
 
-    /**
-     * Retorna memória utilizada em bytes.
-     */
+   
     public static long utilizada(Context context) {
 
         long total = total(context);
@@ -129,9 +119,7 @@ public final class Memoria {
     }
 
 
-    /**
-     * Retorna RAM total em GB.
-     */
+    
     public static double totalGB(Context context) {
 
         return total(context)
@@ -141,9 +129,7 @@ public final class Memoria {
     }
 
 
-    /**
-     * Retorna RAM disponível em GB.
-     */
+    
     public static double disponivelGB(Context context) {
 
         return disponivel(context)
@@ -163,4 +149,4 @@ public final class Memoria {
 
     }
 
-}
+} */
