@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -17,9 +17,7 @@ public final class Aplicativos {
     // HARDWARE
     // ==========================
 
-    /**
-     * Aplicativos são um recurso lógico do sistema.
-     */
+   
     public static boolean possui() {
 
         return true;
@@ -31,10 +29,7 @@ public final class Aplicativos {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Acesso básico aos próprios aplicativos
-     * não exige permissão.
-     */
+   
     public static boolean temPermissao(Context context) {
 
         return true;
@@ -60,9 +55,7 @@ public final class Aplicativos {
     // INFORMAÇÕES
     // ==========================
 
-    /**
-     * Retorna quantidade de aplicativos instalados.
-     */
+   
     public static int quantidade(Context context) {
 
         PackageManager pm =
@@ -80,9 +73,7 @@ public final class Aplicativos {
     }
 
 
-    /**
-     * Verifica se um pacote está instalado.
-     */
+    
     public static boolean instalado(
             Context context,
             String pacote
@@ -109,9 +100,7 @@ public final class Aplicativos {
     }
 
 
-    /**
-     * Retorna versão de um aplicativo.
-     */
+    
     public static String versao(
             Context context,
             String pacote
@@ -138,9 +127,7 @@ public final class Aplicativos {
     }
 
 
-    /**
-     * Lista aplicativos instalados.
-     */
+    
     public static List<ApplicationInfo> listar(
             Context context
     ) {
@@ -164,4 +151,4 @@ public final class Aplicativos {
 
     }
 
-}
+} */
