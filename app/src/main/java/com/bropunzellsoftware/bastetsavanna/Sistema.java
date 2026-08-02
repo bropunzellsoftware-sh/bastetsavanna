@@ -12,9 +12,7 @@ public final class Sistema {
     // HARDWARE
     // ==========================
 
-    /**
-     * Sistema Android disponível.
-     */
+    
     public static boolean possui() {
 
         return true;
@@ -26,9 +24,7 @@ public final class Sistema {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Informações do sistema não precisam de permissão.
-     */
+   
     public static boolean temPermissao() {
 
         return true;
@@ -54,9 +50,7 @@ public final class Sistema {
     // INFORMAÇÕES
     // ==========================
 
-    /**
-     * Versão do Android em número.
-     */
+    
     public static int androidAPI() {
 
         return Build.VERSION.SDK_INT;
@@ -64,9 +58,7 @@ public final class Sistema {
     }
 
 
-    /**
-     * Nome da versão Android.
-     */
+    
     public static String androidVersao() {
 
         return Build.VERSION.RELEASE;
@@ -74,9 +66,7 @@ public final class Sistema {
     }
 
 
-    /**
-     * Fabricante do aparelho.
-     */
+   
     public static String fabricante() {
 
         return Build.MANUFACTURER;
@@ -84,9 +74,7 @@ public final class Sistema {
     }
 
 
-    /**
-     * Marca do aparelho.
-     */
+   
     public static String marca() {
 
         return Build.BRAND;
@@ -94,9 +82,7 @@ public final class Sistema {
     }
 
 
-    /**
-     * Modelo comercial.
-     */
+  
     public static String modelo() {
 
         return Build.MODEL;
@@ -104,9 +90,7 @@ public final class Sistema {
     }
 
 
-    /**
-     * Nome do dispositivo.
-     */
+    
     public static String dispositivo() {
 
         return Build.DEVICE;
@@ -114,9 +98,7 @@ public final class Sistema {
     }
 
 
-    /**
-     * Produto interno.
-     */
+   
     public static String produto() {
 
         return Build.PRODUCT;
@@ -124,9 +106,7 @@ public final class Sistema {
     }
 
 
-    /**
-     * Identificação completa.
-     */
+   
     public static String identificacao() {
 
         return fabricante()
@@ -136,9 +116,7 @@ public final class Sistema {
     }
 
 
-    /**
-     * Verifica se é Android recente.
-     */
+    
     public static boolean androidModerno() {
 
         return Build.VERSION.SDK_INT
