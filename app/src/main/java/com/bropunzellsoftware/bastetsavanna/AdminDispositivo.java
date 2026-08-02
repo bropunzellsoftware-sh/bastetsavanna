@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.app.admin.DevicePolicyManager;
 import android.content.ComponentName;
@@ -14,10 +14,7 @@ public final class AdminDispositivo {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica suporte ao gerenciamento
-     * administrativo do dispositivo.
-     */
+   
     public static boolean possui(Context context) {
 
         DevicePolicyManager manager =
@@ -35,11 +32,7 @@ public final class AdminDispositivo {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Administração do dispositivo não é
-     * uma permissão comum.
-     * Depende de ativação manual do usuário.
-     */
+    
     public static boolean ativo(
             Context context,
             ComponentName componente
@@ -63,11 +56,7 @@ public final class AdminDispositivo {
     }
 
 
-    /**
-     * Solicitação é feita via Intent:
-     *
-     * ACTION_ADD_DEVICE_ADMIN
-     */
+    
     public static void solicitar() {
 
         // Chamado pela Activity.
@@ -93,9 +82,7 @@ public final class AdminDispositivo {
     // RECURSOS
     // ==========================
 
-    /**
-     * Verifica se o app pode bloquear tela.
-     */
+   
     public static boolean podeBloquear(
             Context context,
             ComponentName componente
@@ -109,9 +96,7 @@ public final class AdminDispositivo {
     }
 
 
-    /**
-     * Verifica se o app é administrador.
-     */
+    
     public static boolean disponivel(
             Context context,
             ComponentName componente
@@ -126,4 +111,4 @@ public final class AdminDispositivo {
 
     }
 
-}
+} */
