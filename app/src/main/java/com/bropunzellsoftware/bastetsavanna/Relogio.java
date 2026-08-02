@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.content.Context;
 import android.os.SystemClock;
@@ -18,10 +18,7 @@ public final class Relogio {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica suporte ao relógio
-     * do sistema.
-     */
+    
     public static boolean possui() {
 
         return true;
@@ -33,10 +30,7 @@ public final class Relogio {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Relógio do sistema não exige
-     * permissão.
-     */
+    
     public static boolean temPermissao(
             Context context
     ) {
@@ -64,9 +58,7 @@ public final class Relogio {
     // DATA E HORA
     // ==========================
 
-    /**
-     * Retorna timestamp atual.
-     */
+   
     public static long timestamp() {
 
         return System.currentTimeMillis();
@@ -74,9 +66,7 @@ public final class Relogio {
     }
 
 
-    /**
-     * Retorna data formatada.
-     */
+    
     public static String data() {
 
         SimpleDateFormat formato =
@@ -93,9 +83,7 @@ public final class Relogio {
     }
 
 
-    /**
-     * Retorna hora formatada.
-     */
+   
     public static String hora() {
 
         SimpleDateFormat formato =
@@ -112,9 +100,7 @@ public final class Relogio {
     }
 
 
-    /**
-     * Retorna data e hora completa.
-     */
+    
     public static String completo() {
 
         SimpleDateFormat formato =
@@ -135,10 +121,7 @@ public final class Relogio {
     // SISTEMA
     // ==========================
 
-    /**
-     * Tempo desde inicialização
-     * do aparelho.
-     */
+    
     public static long uptime() {
 
         return SystemClock.elapsedRealtime();
@@ -146,9 +129,7 @@ public final class Relogio {
     }
 
 
-    /**
-     * Retorna fuso horário atual.
-     */
+    
     public static String fuso() {
 
         return TimeZone
@@ -168,4 +149,4 @@ public final class Relogio {
 
     }
 
-}
+} */
