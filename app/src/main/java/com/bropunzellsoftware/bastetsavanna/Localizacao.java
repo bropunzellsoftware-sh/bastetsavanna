@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.Manifest;
 import android.app.Activity;
@@ -15,23 +15,17 @@ public final class Localizacao {
     // HARDWARE
     // ==========================
 
-    /**
-     * O aparelho possui GPS?
-     */
+   
     public static boolean possuiGPS(Context context) {
         return Hardware.possuiGPS(context);
     }
 
-    /**
-     * O aparelho possui localização por rede?
-     */
+    
     public static boolean possuiRede(Context context) {
         return Hardware.possuiLocalizacaoRede(context);
     }
 
-    /**
-     * O aparelho possui alguma forma de localização?
-     */
+   
     public static boolean possui(Context context) {
 
         return possuiGPS(context)
@@ -43,9 +37,7 @@ public final class Localizacao {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Localização aproximada.
-     */
+   
     public static boolean temAproximada(Activity activity) {
 
         return Permissao.verificar(
@@ -55,9 +47,7 @@ public final class Localizacao {
 
     }
 
-    /**
-     * Localização precisa.
-     */
+   
     public static boolean temPrecisa(Activity activity) {
 
         return Permissao.verificar(
@@ -67,9 +57,7 @@ public final class Localizacao {
 
     }
 
-    /**
-     * Possui ambas?
-     */
+   
     public static boolean temPermissao(Activity activity) {
 
         return temAproximada(activity)
@@ -77,9 +65,7 @@ public final class Localizacao {
 
     }
 
-    /**
-     * Solicita localização aproximada.
-     */
+    
     public static void solicitarAproximada(Activity activity) {
 
         Permissao.solicitar(
@@ -90,9 +76,7 @@ public final class Localizacao {
 
     }
 
-    /**
-     * Solicita localização precisa.
-     */
+    
     public static void solicitarPrecisa(Activity activity) {
 
         Permissao.solicitar(
@@ -103,9 +87,7 @@ public final class Localizacao {
 
     }
 
-    /**
-     * Solicita ambas.
-     */
+    
     public static void solicitar(Activity activity) {
 
         Permissao.solicitar(
@@ -134,9 +116,7 @@ public final class Localizacao {
     // ESTADO
     // ==========================
 
-    /**
-     * GPS disponível para uso.
-     */
+    
     public static boolean disponivel(Activity activity) {
 
         return possui(activity)
@@ -144,4 +124,4 @@ public final class Localizacao {
 
     }
 
-}
+} */
