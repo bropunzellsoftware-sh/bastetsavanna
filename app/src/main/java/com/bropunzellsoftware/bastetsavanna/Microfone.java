@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.Manifest;
 import android.app.Activity;
@@ -15,9 +15,7 @@ public final class Microfone {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica se o aparelho possui microfone.
-     */
+   
     public static boolean possui(Context context) {
         return Hardware.possuiMicrofone(context);
     }
@@ -26,9 +24,7 @@ public final class Microfone {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Verifica se a permissão foi concedida.
-     */
+    
     public static boolean temPermissao(Activity activity) {
 
         return Permissao.verificar(
@@ -38,9 +34,7 @@ public final class Microfone {
 
     }
 
-    /**
-     * Solicita a permissão do microfone.
-     */
+    
     public static void solicitar(Activity activity) {
 
         Permissao.solicitar(
@@ -51,10 +45,7 @@ public final class Microfone {
 
     }
 
-    /**
-     * Verifica se o Android recomenda
-     * mostrar uma explicação.
-     */
+    
     public static boolean deveExplicar(Activity activity) {
 
         return Permissao.deveExplicar(
@@ -68,10 +59,7 @@ public final class Microfone {
     // ESTADO
     // ==========================
 
-    /**
-     * Retorna true quando o microfone
-     * pode ser utilizado.
-     */
+   
     public static boolean disponivel(Activity activity) {
 
         return possui(activity)
@@ -79,4 +67,4 @@ public final class Microfone {
 
     }
 
-}
+} */
