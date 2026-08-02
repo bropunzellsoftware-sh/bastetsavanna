@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.app.Activity;
 import android.content.Context;
@@ -13,9 +13,7 @@ public final class Permissao {
         // Impede instanciação
     }
 
-    /**
-     * Verifica se uma permissão foi concedida.
-     */
+    
     public static boolean verificar(Context context, String permissao) {
         return ContextCompat.checkSelfPermission(
                 context,
@@ -23,9 +21,7 @@ public final class Permissao {
         ) == PackageManager.PERMISSION_GRANTED;
     }
 
-    /**
-     * Verifica se todas as permissões foram concedidas.
-     */
+    
     public static boolean verificarTodas(Context context, String[] permissoes) {
 
         for (String permissao : permissoes) {
@@ -39,9 +35,7 @@ public final class Permissao {
         return true;
     }
 
-    /**
-     * Solicita uma única permissão.
-     */
+    
     public static void solicitar(
             Activity activity,
             String permissao,
@@ -56,9 +50,7 @@ public final class Permissao {
 
     }
 
-    /**
-     * Solicita várias permissões.
-     */
+    
     public static void solicitar(
             Activity activity,
             String[] permissoes,
@@ -73,10 +65,7 @@ public final class Permissao {
 
     }
 
-    /**
-     * Informa se o Android recomenda explicar
-     * ao usuário o motivo da permissão.
-     */
+    
     public static boolean deveExplicar(
             Activity activity,
             String permissao
@@ -89,4 +78,4 @@ public final class Permissao {
 
     }
 
-}
+} */
