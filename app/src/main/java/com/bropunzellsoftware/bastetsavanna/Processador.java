@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.os.Build;
 
@@ -12,9 +12,7 @@ public final class Processador {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica se existe processador.
-     */
+    
     public static boolean possui() {
 
         return true;
@@ -26,9 +24,7 @@ public final class Processador {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Informações da CPU não necessitam permissão.
-     */
+    
     public static boolean temPermissao() {
 
         return true;
@@ -54,9 +50,7 @@ public final class Processador {
     // INFORMAÇÕES
     // ==========================
 
-    /**
-     * Quantidade de núcleos disponíveis.
-     */
+    
     public static int nucleos() {
 
         return Runtime
@@ -66,9 +60,7 @@ public final class Processador {
     }
 
 
-    /**
-     * Arquitetura do processador.
-     */
+    
     public static String arquitetura() {
 
         if (Build.SUPPORTED_ABIS.length > 0) {
@@ -82,9 +74,7 @@ public final class Processador {
     }
 
 
-    /**
-     * Lista todas arquiteturas suportadas.
-     */
+   
     public static String[] arquiteturas() {
 
         return Build.SUPPORTED_ABIS;
@@ -92,9 +82,7 @@ public final class Processador {
     }
 
 
-    /**
-     * Fabricante do chipset quando disponível.
-     */
+    
     public static String fabricante() {
 
         return Build.HARDWARE;
@@ -102,9 +90,7 @@ public final class Processador {
     }
 
 
-    /**
-     * Modelo da CPU informado pelo sistema.
-     */
+   
     public static String modelo() {
 
         return Build.DEVICE;
@@ -122,4 +108,4 @@ public final class Processador {
 
     }
 
-}
+} */
