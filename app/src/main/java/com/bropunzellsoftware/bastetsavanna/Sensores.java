@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.content.Context;
 
@@ -95,9 +95,7 @@ public final class Sensores {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Sensores comuns não precisam de permissão.
-     */
+    
     public static boolean temPermissao(Context context) {
 
         return true;
@@ -123,9 +121,7 @@ public final class Sensores {
     // ESTADO
     // ==========================
 
-    /**
-     * Algum sensor está disponível.
-     */
+    
     public static boolean disponivel(Context context) {
 
         return possui(context);
@@ -133,9 +129,7 @@ public final class Sensores {
     }
 
 
-    /**
-     * Verifica se todos os sensores principais existem.
-     */
+    
     public static boolean pacoteCompleto(Context context) {
 
         return possuiAcelerometro(context)
@@ -144,4 +138,4 @@ public final class Sensores {
 
     }
 
-}
+} */
