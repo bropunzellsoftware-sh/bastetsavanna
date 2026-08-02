@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.accessibilityservice.AccessibilityServiceInfo;
 import android.content.Context;
@@ -16,10 +16,7 @@ public final class Acessibilidade {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica se o Android possui
-     * serviço de acessibilidade.
-     */
+   
     public static boolean possui(Context context) {
 
         AccessibilityManager manager =
@@ -37,11 +34,7 @@ public final class Acessibilidade {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Acessibilidade não é uma permissão
-     * comum. O usuário ativa manualmente
-     * nas configurações.
-     */
+    
     public static boolean ativo(
             Context context
     ) {
@@ -77,10 +70,7 @@ public final class Acessibilidade {
     }
 
 
-    /**
-     * Abre configurações de acessibilidade.
-     * Deve ser chamado pela Activity.
-     */
+    
     public static void solicitar() {
 
         // Intent:
@@ -110,4 +100,4 @@ public final class Acessibilidade {
 
     }
 
-}
+} */
