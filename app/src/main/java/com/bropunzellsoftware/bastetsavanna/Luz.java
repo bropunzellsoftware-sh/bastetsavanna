@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -14,10 +14,7 @@ public final class Luz {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica se o aparelho possui
-     * sensor de luminosidade.
-     */
+   
     public static boolean possui(Context context) {
 
         SensorManager manager =
@@ -44,9 +41,7 @@ public final class Luz {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Sensor de luz não necessita permissão.
-     */
+    
     public static boolean temPermissao(Context context) {
 
         return true;
@@ -72,13 +67,11 @@ public final class Luz {
     // ESTADO
     // ==========================
 
-    /**
-     * Sensor de luz disponível.
-     */
+    
     public static boolean disponivel(Context context) {
 
         return possui(context);
 
     }
 
-}
+} */
