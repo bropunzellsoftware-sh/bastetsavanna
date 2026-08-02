@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.Manifest;
 import android.app.Activity;
@@ -16,10 +16,7 @@ public final class Notificacoes {
     // HARDWARE
     // ==========================
 
-    /**
-     * Todo Android moderno possui sistema
-     * de notificações.
-     */
+   
     public static boolean possui(Context context) {
         return true;
     }
@@ -29,9 +26,7 @@ public final class Notificacoes {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * Android 13+ exige permissão.
-     */
+    
     public static boolean temPermissao(Activity activity) {
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
@@ -46,9 +41,7 @@ public final class Notificacoes {
     }
 
 
-    /**
-     * Solicita permissão de notificações.
-     */
+  
     public static void solicitar(Activity activity) {
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
@@ -64,9 +57,7 @@ public final class Notificacoes {
     }
 
 
-    /**
-     * Verifica se deve explicar.
-     */
+    
     public static boolean deveExplicar(Activity activity) {
 
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
@@ -85,9 +76,7 @@ public final class Notificacoes {
     // ESTADO
     // ==========================
 
-    /**
-     * Notificações podem ser utilizadas.
-     */
+    
     public static boolean disponivel(Activity activity) {
 
         return possui(activity)
@@ -95,4 +84,4 @@ public final class Notificacoes {
 
     }
 
-}
+} */
