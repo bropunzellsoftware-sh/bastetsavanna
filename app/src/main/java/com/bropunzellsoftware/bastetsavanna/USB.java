@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.content.Context;
 
@@ -12,9 +12,7 @@ public final class USB {
     // HARDWARE
     // ==========================
 
-    /**
-     * Verifica suporte a USB Host (OTG).
-     */
+   
     public static boolean possuiHost(Context context) {
 
         return Hardware.possuiUSBHost(context);
@@ -22,9 +20,7 @@ public final class USB {
     }
 
 
-    /**
-     * Verifica suporte a USB Accessory.
-     */
+    
     public static boolean possuiAccessory(Context context) {
 
         return Hardware.possuiUSBAccessory(context);
@@ -32,9 +28,7 @@ public final class USB {
     }
 
 
-    /**
-     * Verifica se possui algum suporte USB.
-     */
+   
     public static boolean possui(Context context) {
 
         return possuiHost(context)
@@ -47,9 +41,7 @@ public final class USB {
     // PERMISSÕES
     // ==========================
 
-    /**
-     * USB não utiliza permissão runtime.
-     */
+    
     public static boolean temPermissao(Context context) {
 
         return true;
@@ -57,10 +49,7 @@ public final class USB {
     }
 
 
-    /**
-     * A autorização USB é concedida
-     * por dispositivo conectado.
-     */
+    
     public static void solicitar() {
 
         // Controle feito pelo sistema Android.
@@ -79,13 +68,11 @@ public final class USB {
     // ESTADO
     // ==========================
 
-    /**
-     * USB disponível para utilização.
-     */
+    
     public static boolean disponivel(Context context) {
 
         return possui(context);
 
     }
 
-}
+} */
