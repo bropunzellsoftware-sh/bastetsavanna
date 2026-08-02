@@ -1,4 +1,4 @@
-package com.bropunzellsoftware.bastetsavanna.acesso;
+/* package com.bropunzellsoftware.bastetsavanna.acesso;
 
 import android.os.Build;
 
@@ -135,4 +135,4 @@ public final class Sistema {
 
     }
 
-}
+} */
